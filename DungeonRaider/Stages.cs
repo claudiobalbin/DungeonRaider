@@ -26,12 +26,12 @@ namespace DungeonRaider
             StringBuilder stage1 = new StringBuilder();
             stage1.AppendLine("╔═╦════════════════╗");
             stage1.AppendLine("║ ║                ║");
-            stage1.AppendLine("║ ║ ║              ║");
-            stage1.AppendLine("║ ║ ║              ║");
-            stage1.AppendLine("║ ║#║              ║");
-            stage1.AppendLine("║   ║              ║");
-            stage1.AppendLine("╠═╗ ║              ║");
-            stage1.AppendLine("║x║ ║              ║");
+            stage1.AppendLine("║ ╠══════════════╗ ║");
+            stage1.AppendLine("║ ║              ║ ║");
+            stage1.AppendLine("║ ║#╔═══════════ ║ ║");
+            stage1.AppendLine("║   ║            ║ ║");
+            stage1.AppendLine("╠═╗ ║     <      ║ ║");
+            stage1.AppendLine("║x║ ║            ║#║");
             stage1.AppendLine("║   ║              ║");
             stage1.AppendLine("╚═══╩══════════════╝");
 

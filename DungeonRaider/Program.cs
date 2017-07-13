@@ -16,12 +16,9 @@ namespace DungeonRaider
         {
             Console.Title = "Dungeon Raider";
             Console.SetWindowSize(40, 20);
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Gray;
 
             Stages stg = new Stages();
-
-            //string[,] stage = new string[MAX_Y, MAX_X];
-            //stage = new string[MAX_Y, MAX_X];
 
             stage = Stages.GetStage(1);
 
