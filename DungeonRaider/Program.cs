@@ -14,11 +14,15 @@ namespace DungeonRaider
 
         static void Main(string[] args)
         {
+            //Initializes
             Console.Title = "Dungeon Raider";
             Console.SetWindowSize(40, 20);
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
 
             Stages stg = new Stages();
+
+            Sound.backgroudMusic();
+
 
             stage = Stages.GetStage(1);
 
