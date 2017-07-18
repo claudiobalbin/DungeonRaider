@@ -17,17 +17,20 @@ namespace DungeonRaider
             //Initializes
             Console.Title = "Dungeon Raider";
             Console.SetWindowSize(40, 20);
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Gray;
 
             Stages stg = new Stages();
 
-            Sound.backgroudMusic();
+            //Sound.backgroudMusic();
 
 
             stage = Stages.GetStage(1);
 
             int heroPosX = 1;
             int heroPosY = 1;
+
+            //Enemy enemy1 = new Enemy(heroPosX, heroPosY);
+            Enemy enemy1 = new Enemy(10, 6);
 
             printStage(stage, heroPosX, heroPosY);
 
@@ -50,6 +53,10 @@ namespace DungeonRaider
 
                 if (cki.Key == ConsoleKey.DownArrow && podeIrBaixo(heroPosX, heroPosY))
                     heroPosY++;
+
+                int[] teste = enemy1.NextStep(heroPosX,heroPosY);
+
+                Stages.updateEnemyPosition(x, y);
 
                 stage = Stages.GetStage(1);
 

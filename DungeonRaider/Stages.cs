@@ -66,7 +66,9 @@ namespace DungeonRaider
                 {
                     removePorta(1, 3, 4);
                     var synth = new SpeechSynthesizer();
-                    synth.SpeakAsync("abriu a porta nesse caráiu!");
+                    //string msg = "abriu a porta nesse caráiu!";
+                    string msg = "nhíc";
+                    synth.SpeakAsync(msg);
                 }
             }
         }
